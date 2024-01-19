@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+ }
+ /* This styles the header part of the page */
+ .para{
+   margin: 30px;
+   margin-bottom: 20px;
+   padding: 30px;
+   padding-bottom: 20px;
+   display: grid;
+   height: 100vh;
+    place-items: center;  
+  color: aliceblue;
+
+ }
+ /* This styles the header part p tag of the page */
+ .para p{
+   margin: 0;
+   padding: 0;
+   display: grid;
+   height: 100vh;
+    place-items: top;  
+  color: aliceblue;
+ }
+ /* This styles the header part h1 tag of the page */
+ .para h1{
+   padding-bottom: 10px;
+ }
+ /* This styles the body part of the page */
+ body{
+    background-color: #3e4241;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+ }
+ /* This styles the main parent div of the page */
+ .main{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(155, 169, 179);
+    position: absolute;
+    border: 5px solid rgb(226, 214, 214);
+    border-radius: 20px; 
+    padding-top: 20px;
+    margin-top: 20px;
+ }
+ /* This styles the text box which displays the result of the mathematically calculation of the page */
+ .main input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 80px;
+    top: 5px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid rgb(226, 214, 214);
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    color: black;
+ }
+ /* Below piece of code is for styling each button */
+ .btn button[type='button']{
+    width:90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+ }
+ /* Below piece of code will change buttons to black when hover over button */
+ .btn button[type='button']:hover{
+    background-color: black;
+    color: white;
+ }
+ 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- The head section contains metadata, which simply means data about data. 
+      This means information in the head tag is not displayed on the page but the
+       information is used by browsers and by search engines. -->
+<head>
+   <!-- The link tag adds css file to html using href attribute -->
+   <link rel="stylesheet" href="Calc.css">
+   <title>Calculator</title>
+</head>
+<body>
+   <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+   <!-- This div 'para' is for p and h1 to provide heading to our calculator -->
+   <div class="para">
+      <h1 id="title">Calculator</h1>
+      <p id="description"> This calculator is to do math operations like addition, substraction, modulus, division and multiplication.</p>
+   </div> 
+   <!-- //There is a main div which is the parent div for all the buttons and input tags and child div 'btn' handles 
+      all the buttons for styling the buttons -->
+   <div class="main">
+      <input type="text" id = 'result'>
+      <div class="btn">
+         <button type="button" id="clear" value = 'C' onclick = "Clear()">C</button>
+         <button type="button" id="modulus" value = '%' onclick = "display('%')">%</button>
+         <button type="button" id="delete" value = 'DEL' onclick ="Back('←')">DEL</button>
+         <button type="button" id="modulus" value = '/' onclick = "display('/')">/</button>
+         <br>
+         <button type="button" id="7" value = '7' onclick = "display('7')">7</button>
+         <button type="button" id="8" value = '8' onclick = "display('8')">8</button>
+         <button type="button" id="9" value = '9' onclick = "display('9')">9</button>
+         <button type="button" id="multiply" value = 'x' onclick = "display('*')">*</button>
+         <br>
+         <button type="button" id="4" value = '4' onclick = "display('4')">4</button>
+         <button type="button" id="5" value = '5' onclick = "display('5')">5</button>
+         <button type="button" id="6" value = '6' onclick = "display('6')">6</button>
+         <button type="button"  id="subtract" value = '-' onclick = "display('-')">-</button>
+         <br>
+         <button type="button" id="1" value = '1' onclick = "display('1')">1</button>
+         <button type="button" id="2" value = '2' onclick = "display('2')">2</button>
+         <button type="button" id="3" value = '3' onclick = "display('3')">3</button>
+         <button type="button" id="add" value = '+' onclick = "display('+')">+</button>
+         <br>
+         <button type="button" id="doubleZero" value = '00'onclick = "display('00')">00</button>
+         <button type="button" id="0" value = '0' onclick = "display('0')">0</button>
+         <button type="button" id="dot" value = '.' onclick = "display('.')">.</button>
+         <button type="button" id="equal" value = '=' onclick = "Result()">=</button>
+      </div>
+   </div>
+  <!--  The script tag add external java script file to html using src attributes -->
+   <script src = 'Cal.js' ></script>
+</body>
+</html>
